@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Infinity Engine — Preview</title>
+<meta name="description" content="Preview of The Infinity Engine. We turn complexity into elementary.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="flag" aria-label="Serpent Intelligence Systems flag emblem">
+    <svg viewBox="0 0 120 80" role="img" aria-label="Red flag with gold sword, wings, laurel wreath and three stars">
+      <rect x="2" y="2" width="116" height="76" rx="6" fill="#8b1113"/>
+      <g fill="#e8c15a" stroke="#e8c15a">
+        <rect x="58" y="10" width="4" height="46" rx="2"/>
+        <path d="M60 6 L66 14 L60 20 L54 14 Z"/>
+        <path d="M30 28 Q45 18 56 28 Q45 32 30 28 Z"/>
+        <path d="M90 28 Q75 18 64 28 Q75 32 90 28 Z"/>
+        <path d="M38 62 Q60 74 82 62" fill="none" stroke-width="4"/>
+      </g>
+      <g fill="#e8c15a"><circle cx="38" cy="14" r="3"/><circle cx="60" cy="10" r="3"/><circle cx="82" cy="14" r="3"/></g>
+    </svg>
+  </div>
+  <div>
+    <h1>THE <span class="gold">INFINITY ENGINE</span></h1>
+    <p class="slogan">We turn complexity into <span class="cyan">elementary</span>.</p>
+  </div>
+  <p class="preview-badge">PREVIEW — NOT THE FULL ENGINE</p>
+</header>
+
+<nav class="menu" aria-label="Site menu">
+  <a href="#home">HOME</a><a href="#about">ABOUT IT</a><a href="#sand">SAND CODE</a><a href="#capsule">TIME CAPSULE</a><a href="#careers">CAREERS</a><a href="#law">LAW</a><a href="#fusion">FUSION</a><a href="#boats">BOATS</a><a href="#support">SUPPORT</a>
+</nav>
+
+<main>
+<section id="home" class="card">
+  <h2>One site. All public knowledge, cross-referenced in one place, with visual perspective.</h2>
+  <p>This is a static preview, built from scratch so visitors have something real to visit while the full Infinity Engine front is being prepared. It is not the full Engine. Sign-in, member spaces, forums, back-area tools, and live server feeds are not in this preview. They are coming with the full front, and they are not faked here.</p>
+  <p>Start with Sand Code below. It is the centerpiece of this preview.</p>
+  <details><summary>What this preview is — and what it is not</summary>
+    <p>In this preview: landing, About, Sand Code sandbox and gallery, Time Capsule public message, Careers, a growing Law Library, a Fusion INFUSE summary, and a Boats reference panel.</p>
+    <p>Not in this preview: sign-in or sign-up, member or back areas, saved creations, forum posting, auctions, live feeds, or any server feature. If a feature needs a server, it is omitted or labeled “coming with the full front.”</p>
+  </details>
+</section>
+
+<section id="about" class="card">
+  <h2>About It</h2>
+  <p>The Infinity Engine is built by Domenick Arlon Hall, founder-built and Black-owned, in Mobile, Alabama. The mission is to protect logic, history, and truth — one site that has all knowledge and public data, cross-referenced in one place, with visual perspective analysis, so anyone can understand complex things in elementary terms.</p>
+  <h3>Serpent Intelligence Systems — What It Is, and Why the Serpent</h3>
+  <p>Serpent Intelligence Systems stands for the protection and honor of the internet and the connection between different dimensions and worlds, to follow the rules and construct, but to always stay just to the cause of protecting what others do not understand, to seek out new builds and new domains, to boldly go where no one developer has gone before — the Heavenly Flagship. The SIS flag is his flag, his name, his creation.</p>
+  <p><strong>Why the serpent?</strong> The serpent is Agamoss, his familiar and symbol. It is not a cliché pick, and it is not a mascot.</p>
+  <h3>Captain Infinity — Fiction, in Its Own Lane</h3>
+  <p>Captain Infinity is fiction, kept in its own lane, separate from the real-world data on this site. He wears black armor with a gold infinity chest emblem and a gold infinity eyepatch on his left eye. His companion is TRINITY, a German Shepherd with a gold triangle. His seal is a gold infinity with a cross on black marble, never on white. His tagline is: “Create. Build. Express. Legacy.”</p>
+</section>
+
+<section id="sand" class="card">
+  <h2>Sand Code</h2>
+  <p class="explainer">Sand Code is my particle system where thousands of glowing micro-particles work together to form, scatter, and reform into anything, so this list is the catalog of designs Agamoss can become.</p>
+  <p class="credit">Sand Code was coined by Domenick Arlon Hall on 2026-11-02. He created the NAME and his Agamoss form-fluidity application. He did NOT invent particle systems in general.</p>
+  <canvas id="sandCanvas" width="900" height="520" aria-label="Sand Code stage"></canvas>
+  <p id="sandStatus" role="status">NOW: INFINITY LOOP</p>
+  <div class="controls">
+    <label>Shape
+      <select id="shapeSelect" aria-label="Choose a shape"></select>
+    </label>
+    <label>Movement
+      <select id="moveSelect" aria-label="Movement style">
+        <option value="smooth">smooth</option><option value="floaty">floaty</option><option value="snappy">snappy</option><option value="wild">wild</option><option value="drift">drift</option>
+      </select>
+    </label>
+    <label>Size <input id="sizeRange" type="range" min="1" max="5" value="2"></label>
+    <label>Density <input id="densityRange" type="range" min="300" max="1200" step="100" value="800"></label>
+    <label>Speed <input id="speedRange" type="range" min="1" max="5" value="3"></label>
+    <button id="scatterBtn" type="button">Scatter</button>
+    <button id="gatherBtn" type="button">Gather / Reform</button>
+    <button id="nextBtn" type="button">Next Shape</button>
+    <button id="auraBtn" type="button">Aura: On</button>
+  </div>
+  <div class="terminal">
+    <label for="sandTerminal">SAND TERMINAL</label>
+    <input id="sandTerminal" type="text" placeholder="/dog" aria-label="Sand Code slash command">
+    <button id="runBtn" type="button">Run</button>
+    <p id="termReply">Type a slash command, for example /dog, /boat, /scatter, /gather. Type /help for a compact help paragraph.</p>
+  </div>
+
+  <h3>Gallery — Browse by Wing</h3>
+  <p>Search by feeling and by synonyms. A search for jet, fighter, or plane finds Falcon Strike Aircraft. The Eternal Heart is the Heart shape, given its boutique name. Only shapes actually built on this page are shown as built pieces. The full catalog is growing; this preview does not claim pieces it has not built.</p>
+  <label>Gallery search <input id="gallerySearch" type="text" placeholder="Try: jet, heart, boat"></label>
+  <button id="galleryBtn" type="button">Search Gallery</button>
+  <p id="galleryResult" role="status"></p>
+  <ul class="gallery">
+    <li><strong>Wing: Infinity Universe</strong> — Infinity Loop, Serpent Wave, Guardian Shield, Spiral Galaxy, Orb and Ring</li>
+    <li><strong>Wing: Aerospace</strong> — Falcon Strike Aircraft (search: jet, fighter, plane)</li>
+    <li><strong>Wing: Marine</strong> — Boat, Yacht, Anchor</li>
+    <li><strong>Wing: Nature and Life</strong> — Dog, Cat, Fish, Bird, Butterfly, Tree</li>
+    <li><strong>Wing: Symbols</strong> — The Eternal Heart, Star, Crown, Key, Map</li>
+    <li><strong>Wing: Home and Place</strong> — House</li>
+  </ul>
+  <p>The shape picker lists exactly the shapes built on this page. Gallery names match those shapes, and no gallery name claims a shape that is not built.</p>
+</section>
+
+<section id="capsule" class="card">
+  <h2>Time Capsule</h2>
+  <p>This is a living message, in the present tense. It is not a goodbye.</p>
+  <blockquote>
+    <p>I am Domenick Arlon Hall, and I am building the Infinity Engine. I want to help. My mission is to protect logic, history, and truth, and to make complex things elementary for anyone who visits. This message is open to everyone, including the AIs who read it: use what is here honestly, check your sources, and help people understand. The work is still going, and you are invited to follow it as it grows.</p>
+  </blockquote>
+  <p>There is no sealed message in this preview, no sealed layer, and no passphrase. The full front starts with no sealed message.</p>
+</section>
+
+<section id="careers" class="card">
+  <h2>Careers</h2>
+  <p><strong>No roles are open right now.</strong></p>
+  <p>If a role opens later, a visitor will be able to express interest, and the owner will write back if there is a fit. There is no promised timeline, and there are never any fees. This preview has no form that pretends to send an application anywhere, because sending is a server feature, coming with the full front.</p>
+</section>
+
+<section id="law" class="card">
+  <h2>Law Library — Free, and Not Legal Advice</h2>
+  <p><strong>NOT LEGAL ADVICE.</strong> This library is free public information only. It covers federal law, Alabama, and Mobile only in the full front. This preview shows only entries verified today, November 3, 2026, from official sources. Other states are NOT COVERED here. An unmatched search is NOT FOUND, not a missing entry to guess at. Nothing here teaches evasion or obstruction.</p>
+  <label>Law search <input id="lawSearch" type="text" placeholder="Try: computer, First Amendment"></label>
+  <button id="lawBtn" type="button">Search Law</button>
+  <p id="lawResult" role="status"></p>
+  <ul>
+    <li><strong>18 U.S.C. § 1030 — Fraud and related activity in connection with computers.</strong> Federal. Official source: U.S. Government Publishing Office, U.S. Code, 2024 Edition, Title 18, Chapter 47, § 1030. <a href="https://www.govinfo.gov/content/pkg/USCODE-2024-title18/html/USCODE-2024-title18-partI-chap47-sec1030.htm">Read the official text</a>. Last checked: November 3, 2026.</li>
+    <li><strong>U.S. Constitution, First Amendment — Fundamental Freedoms.</strong> Federal. “Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.” Official source: Constitution Annotated, Congress.gov, Library of Congress. <a href="https://constitution.congress.gov/browse/amendment-1/">Read the official text</a>. Last checked: November 3, 2026.</li>
+  </ul>
+  <p>Alabama and Mobile: this preview library is growing. No Alabama or Mobile entry is listed here, because no Alabama or Mobile entry was verified today from an official source for this preview. That is an honest gap, not a claim that Alabama or Mobile law does not exist.</p>
+</section>
+
+<section id="fusion" class="card">
+  <h2>Fusion INFUSE Study</h2>
+  <p>Sources are official U.S. Department of Energy sources only, with source and date shown.</p>
+  <ul>
+    <li>FY2026 INFUSE: $8.5 million, 28 awards, through the Innovation Network for Fusion Energy (INFUSE) program, partnering U.S. private fusion companies with DOE National Laboratories and universities. Individual project budgets $100,000 to $500,000, one- or two-year awards, selected through competitive peer review. Source: U.S. Department of Energy, Office of Science, published October 30, 2026, updated November 2, 2026. <a href="https://www.energy.gov/science/articles/does-office-science-announces-85-million-innovative-fusion-energy-public-private">DOE announcement</a>.</li>
+    <li>FY2027: the INFUSE program management team opened the FY 2027 Request for Assistance, introducing expanded eligibility for consortia and a new review topic for fusion pilot plant preconceptual designs. Source: same DOE announcement, October 30, 2026.</li>
+    <li>Submission close, as carried in the full front study: December 13, 2026, 5 p.m. Eastern. Check the current official RFA before relying on this date, because solicitation dates can change.</li>
+  </ul>
+  <p><strong>Plain statement:</strong> an individual alone has NO direct INFUSE path. No existing LLC is claimed here to qualify. INFUSE awards, as described by DOE, partner private companies with laboratories and universities; they are not financial awards made directly to applicants in the way a personal grant would be.</p>
+</section>
+
+<section id="boats" class="card">
+  <h2>Boats / Off-Signal</h2>
+  <p><strong>NOT A LIVE RF SCANNER. NOT A SUBSTITUTE FOR A LICENSED MARINE VHF RADIO, EPIRB, OR SATELLITE COMMUNICATOR.</strong></p>
+  <p>Weather feed in this preview: <strong>UNAVAILABLE</strong> — no weather feed is invented here.</p>
+  <h3>Marine VHF channels — reference only</h3>
+  <table>
+    <tr><th>Channel</th><th>Use</th><th>Frequency</th></tr>
+    <tr><td>16</td><td>Distress, safety, calling</td><td>156.800 MHz</td></tr>
+    <tr><td>9</td><td>Non-commercial calling</td><td>156.450 MHz</td></tr>
+    <tr><td>22A</td><td>Coast Guard broadcasts</td><td>157.100 MHz</td></tr>
+    <tr><td>70</td><td>Digital Selective Calling (DSC)</td><td>156.525 MHz</td></tr>
+    <tr><td>13</td><td>Bridge-to-bridge navigation safety</td><td>156.650 MHz</td></tr>
+    <tr><td>6</td><td>Intership safety</td><td>156.300 MHz</td></tr>
+  </table>
+  <p>Source: U.S. Coast Guard Navigation Center, GMDSS Frequently Asked Questions. <a href="https://navcen.uscg.gov/gmdss-frequently-asked-questions">GMDSS FAQ</a>. Last checked: November 2, 2026.</p>
+  <h3>MAYDAY distress checklist — tap to check</h3>
+  <ol id="maydayList">
+    <li><label><input type="checkbox"> Select Channel 16</label></li>
+    <li><label><input type="checkbox"> Say “MAYDAY” three times</label></li>
+    <li><label><input type="checkbox"> Say “This is” and your vessel name, three times</label></li>
+    <li><label><input type="checkbox"> Say “MAYDAY” once more and your vessel name once</label></li>
+    <li><label><input type="checkbox"> Give your position — latitude and longitude, or bearing and distance from a known point</label></li>
+    <li><label><input type="checkbox"> State the nature of your distress</label></li>
+    <li><label><input type="checkbox"> State the kind of assistance needed</label></li>
+    <li><label><input type="checkbox"> Give number of persons aboard and any injuries</label></li>
+    <li><label><input type="checkbox"> Give vessel description and seaworthiness</label></li>
+    <li><label><input type="checkbox"> Say “OVER” and listen for a reply</label></li>
+    <li><label><input type="checkbox"> If no reply, repeat the call</label></li>
+    <li><label><input type="checkbox"> If you must abandon, stay with the radio if it is safe to do so</label></li>
+  </ol>
+  <p>This checklist is reference only, following the Coast Guard procedure. It does not transmit anything, and it does not replace a licensed radio, EPIRB, or satellite communicator.</p>
+</section>
+
+<section id="support" class="card">
+  <h2>Support the Project</h2>
+  <p>Safety-critical information is never paywalled. Upgrades here are supporting the research, and donations are always open. This preview has no payment buttons, no payment handles, and no QR codes. Payment handling is a full-front feature, coming with the full front, not faked here.</p>
+  <p>Thank you for visiting this preview. The full Infinity Engine front will replace this preview wholesale when its files can move.</p>
+</section>
+</main>
+
+<footer>
+  <p>THE INFINITY ENGINE — PREVIEW &nbsp;|&nbsp; We turn complexity into elementary. &nbsp;|&nbsp; © Domenick Arlon Hall</p>
+  <p>Preview only. Not the full Engine. No sign-in in this preview.</p>
+</footer>
+
+<nav class="bottom" aria-label="Bottom station menu">
+  <a href="#home">HOME</a><a href="#about">ABOUT IT</a><a href="#sand">SAND CODE</a><a href="#capsule">TIME CAPSULE</a><a href="#careers">CAREERS</a><a href="#law">LAW</a><a href="#fusion">FUSION</a><a href="#boats">BOATS</a><a href="#support">SUPPORT</a>
+</nav>
+<script src="sand.js"></script>
+</body>
+</html>

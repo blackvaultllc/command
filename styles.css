@@ -1,0 +1,24 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0a0a0a;color:#f2ead2;line-height:1.55;padding-bottom:64px}
+.top{display:flex;gap:16px;align-items:center;padding:16px;flex-wrap:wrap;background:#111;border-bottom:2px solid #c9a84c}
+.top h1{margin:0;font-size:clamp(22px,5vw,40px);letter-spacing:.02em}.gold{color:#e8c15a;font-weight:900}.cyan{color:#38d6ff;font-weight:800}
+.slogan{margin:4px 0 0;font-size:clamp(16px,3vw,22px)}.preview-badge{background:#e8c15a;color:#111;font-weight:800;padding:6px 10px;border-radius:999px;margin-left:auto}
+.flag svg{width:120px;height:80px;display:block}
+.menu,.bottom{display:flex;flex-wrap:wrap;gap:6px;padding:10px;background:#141414;justify-content:center}
+.menu a,.bottom a{color:#f2ead2;text-decoration:none;font-weight:700;padding:8px 10px;border:1px solid #c9a84c;border-radius:999px;white-space:nowrap}
+.menu a:hover,.bottom a:hover{background:#c9a84c;color:#111}
+.bottom{position:fixed;left:0;right:0;bottom:0;z-index:20}
+main{max-width:960px;margin:0 auto;padding:16px}
+.card{background:#171717;border:1px solid #3a3a3a;border-radius:16px;padding:18px;margin:0 0 18px}
+h2{color:#e8c15a;margin-top:0}h3{color:#38d6ff}
+a{color:#38d6ff}button,select,input{font-size:16px;padding:8px 10px;border-radius:10px;border:1px solid #666;background:#222;color:#f2ead2;max-width:100%}
+button{background:#c9a84c;color:#111;font-weight:800;cursor:pointer}
+canvas{width:100%;height:auto;background:#000;border:1px solid #c9a84c;border-radius:12px;display:block}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:12px 0}
+.controls label{display:flex;flex-direction:column;gap:4px;font-weight:700}
+.terminal{border:1px solid #38d6ff;border-radius:12px;padding:12px;margin-top:12px}
+.terminal label{font-weight:800;display:block;margin-bottom:6px}
+.terminal input{width:min(420px,100%)}
+.gallery{line-height:1.7}table{border-collapse:collapse;width:100%}th,td{border:1px solid #555;padding:8px;text-align:left}
+blockquote{border-left:4px solid #e8c15a;padding-left:14px;margin-left:0}
+footer{text-align:center;padding:20px;color:#ccc}
+@media(max-width:480px){.top{flex-direction:column;text-align:center}.preview-badge{margin-left:0}.controls label{width:100%}.controls input,.controls select{width:100%}}
