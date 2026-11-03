@@ -2,7 +2,7 @@
 .top{display:flex;gap:16px;align-items:center;padding:16px;flex-wrap:wrap;background:#111;border-bottom:2px solid #c9a84c}
 .top h1{margin:0;font-size:clamp(22px,5vw,40px);letter-spacing:.02em}.gold{color:#e8c15a;font-weight:900}.cyan{color:#38d6ff;font-weight:800}
 .slogan{margin:4px 0 0;font-size:clamp(16px,3vw,22px)}.preview-badge{background:#e8c15a;color:#111;font-weight:800;padding:6px 10px;border-radius:999px;margin-left:auto}
-.flag svg{width:120px;height:80px;display:block}
+.flag img{width:160px;height:auto;display:block;border:1px solid #c9a84c;border-radius:8px;background:#000}
 .menu,.bottom{display:flex;flex-wrap:wrap;gap:6px;padding:10px;background:#141414;justify-content:center}
 .menu a,.bottom a{color:#f2ead2;text-decoration:none;font-weight:700;padding:8px 10px;border:1px solid #c9a84c;border-radius:999px;white-space:nowrap}
 .menu a:hover,.bottom a:hover{background:#c9a84c;color:#111}
