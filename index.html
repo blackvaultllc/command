@@ -6,6 +6,7 @@
 <title>The Infinity Engine — Preview</title>
 <meta name="description" content="Preview of The Infinity Engine. We turn complexity into elementary.">
 <link rel="stylesheet" href="styles.css">
+<noscript><style>#memberView{display:block!important}#coverView{display:none!important}#memberChat{display:none!important}</style></noscript>
 </head>
 <body>
 <header class="top">
@@ -33,6 +34,22 @@
   <a href="#home">HOME</a><a href="#about">ABOUT IT</a><a href="#sand">SAND CODE</a><a href="#capsule">TIME CAPSULE</a><a href="#careers">CAREERS</a><a href="#law">LAW</a><a href="#fusion">FUSION</a><a href="#boats">BOATS</a><a href="#support">SUPPORT</a>
 </nav>
 
+
+<section id="coverView" class="card cover">
+  <h2>Cover Page — Preview</h2>
+  <p>This preview page is a cover page for temporary members. Click once and you meet Agamoss in a limited member interface, with only member-safe sections. Nothing here is the full Engine, and nothing here opens a back area.</p>
+  <p><strong>Member sections in this preview:</strong> HOME, ABOUT IT, SAND CODE, TIME CAPSULE, CAREERS, LAW, FUSION, BOATS, SUPPORT.</p>
+  <p><strong>Not in this preview:</strong> sign-in, member accounts, back areas, saved creations, forum posting, auctions, live feeds, or any server feature.</p>
+  <button id="enterPreviewBtn" type="button">ENTER — MEET AGAMOSS</button>
+  <p class="cover-note">Tap ENTER and the member interface opens. The chat stays at the bottom of the screen, it does not pop to the top.</p>
+</section>
+
+<div id="memberView" hidden>
+<div class="member-shell" aria-label="Limited member interface">
+  <p><strong>MEMBER PREVIEW</strong> &nbsp;|&nbsp; AGAMOSS &nbsp;|&nbsp; SAND CODE READY &nbsp;|&nbsp; 9 MEMBER SECTIONS</p>
+  <p>Limited interface only. No back area, no sign-in, no internal options.</p>
+  <button id="backToCoverBtn" type="button">Back to Cover</button>
+</div>
 <main>
 <section id="home" class="card">
   <h2>One site. All public knowledge, cross-referenced in one place, with visual perspective.</h2>
@@ -56,7 +73,7 @@
 
 <section id="sand" class="card">
   <h2>Sand Code</h2>
-  <p class="explainer">Sand Code is my particle system where thousands of glowing micro-particles work together to form, scatter, and reform into anything, so this list is the catalog of designs Agamoss can become.</p>
+  <p class="explainer">Sand Code is my particle system where thousands of glowing micro-particles work together to form, scatter, and reform into anything, so this list is the catalog of designs Agamoss can become. In this preview Sand Code is green grains on pure black, outline and edge points only, so it reads as sand, not as a solid shape.</p>
   <p class="credit">Sand Code was coined by Domenick Arlon Hall on 2026-11-02. He created the NAME and his Agamoss form-fluidity application. He did NOT invent particle systems in general.</p>
   <canvas id="sandCanvas" width="900" height="520" aria-label="Sand Code stage"></canvas>
   <p id="sandStatus" role="status">NOW: INFINITY LOOP</p>
@@ -183,10 +200,27 @@
   <p>THE INFINITY ENGINE — PREVIEW &nbsp;|&nbsp; We turn complexity into elementary. &nbsp;|&nbsp; © Domenick Arlon Hall</p>
   <p>Preview only. Not the full Engine. No sign-in in this preview.</p>
 </footer>
+</div>
+
+
+<div id="memberChat" class="chat-dock" hidden>
+  <div class="chat-tabs" role="tablist" aria-label="Chat tabs">
+    <button id="chatTabAll" type="button" class="active">ALL</button>
+    <button id="chatTabAgamoss" type="button">AGAMOSS</button>
+    <span class="chat-note">Preview chat — navigation help only, messages do not send yet.</span>
+  </div>
+  <div id="chatLog" class="chat-log" aria-live="polite"></div>
+  <div class="chat-input-row">
+    <input id="chatInput" type="text" placeholder="Say a section name, for example Sand Code" aria-label="Preview chat message">
+    <button id="chatSendBtn" type="button">SEND</button>
+  </div>
+  <p class="chat-foot">This chat is canned navigation help only. It is not a live AI, and nothing typed here is sent to a back end. Live AI replies, Ask the Administrator, and Request a Build come with the full front.</p>
+</div>
 
 <nav class="bottom" aria-label="Bottom station menu">
   <a href="#home">HOME</a><a href="#about">ABOUT IT</a><a href="#sand">SAND CODE</a><a href="#capsule">TIME CAPSULE</a><a href="#careers">CAREERS</a><a href="#law">LAW</a><a href="#fusion">FUSION</a><a href="#boats">BOATS</a><a href="#support">SUPPORT</a>
 </nav>
 <script src="sand.js"></script>
+<script src="member-chat.js"></script>
 </body>
 </html>
