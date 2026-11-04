@@ -24,6 +24,7 @@ canvas{width:100%;height:auto;background:#000;border:1px solid #c9a84c;border-ra
 .gallery{line-height:1.7}table{border-collapse:collapse;width:100%}th,td{border:1px solid #555;padding:8px;text-align:left}
 blockquote{border-left:4px solid #e8c15a;padding-left:14px;margin-left:0}
 footer{text-align:center;padding:20px;color:#ccc}
+footer .signature{font-size:13px;color:#999;margin:8px 0 0}
 .cover{text-align:center}.cover button{font-size:18px;padding:12px 18px}.cover-note{color:#ccc}
 .member-shell{background:#101418;border:1px solid #38d6ff;border-radius:16px;padding:14px 18px;margin:0 0 18px}
 .member-shell p{margin:4px 0}
