@@ -1,48 +1,17 @@
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0a0a0a;color:#f2ead2;line-height:1.55;padding-bottom:64px}
-.top{display:flex;gap:16px;align-items:center;padding:16px;flex-wrap:wrap;background:#111;border-bottom:2px solid #c9a84c}
-.top h1{margin:0;font-size:clamp(22px,5vw,40px);letter-spacing:.02em}.gold{color:#e8c15a;font-weight:900}.cyan{color:#38d6ff;font-weight:800}
-.slogan{margin:4px 0 0;font-size:clamp(16px,3vw,22px)}.preview-badge{background:#e8c15a;color:#111;font-weight:800;padding:6px 10px;border-radius:999px;margin-left:auto}
-.flag img{width:160px;height:auto;display:block;border:1px solid #c9a84c;border-radius:8px;background:#000}
-.coming-soon{max-width:960px;margin:18px auto;padding:18px;background:#1a1206;border:2px solid #e8c15a;border-radius:16px;text-align:center}
-.coming-soon h2{color:#e8c15a;margin:0 0 8px}
-.coming-soon p{margin:6px 0}
-.menu,.bottom{display:flex;flex-wrap:wrap;gap:6px;padding:10px;background:#141414;justify-content:center}
-.menu a,.bottom a{color:#f2ead2;text-decoration:none;font-weight:700;padding:8px 10px;border:1px solid #c9a84c;border-radius:999px;white-space:nowrap}
-.menu a:hover,.bottom a:hover{background:#c9a84c;color:#111}
-.bottom{position:fixed;left:0;right:0;bottom:0;z-index:20}
-main{max-width:960px;margin:0 auto;padding:16px}
-.card{background:#171717;border:1px solid #3a3a3a;border-radius:16px;padding:18px;margin:0 0 18px}
-h2{color:#e8c15a;margin-top:0}h3{color:#38d6ff}
-a{color:#38d6ff}button,select,input{font-size:16px;padding:8px 10px;border-radius:10px;border:1px solid #666;background:#222;color:#f2ead2;max-width:100%}
-button{background:#c9a84c;color:#111;font-weight:800;cursor:pointer}
-canvas{width:100%;height:auto;background:#000;border:1px solid #c9a84c;border-radius:12px;display:block}
-.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:12px 0}
-.controls label{display:flex;flex-direction:column;gap:4px;font-weight:700}
-.terminal{border:1px solid #38d6ff;border-radius:12px;padding:12px;margin-top:12px}
-.terminal label{font-weight:800;display:block;margin-bottom:6px}
-.terminal input{width:min(420px,100%)}
-.gallery{line-height:1.7}table{border-collapse:collapse;width:100%}th,td{border:1px solid #555;padding:8px;text-align:left}
-blockquote{border-left:4px solid #e8c15a;padding-left:14px;margin-left:0}
-footer{text-align:center;padding:20px;color:#ccc}
-footer .signature{font-size:13px;color:#999;margin:8px 0 0}
-.cover{text-align:center}.cover button{font-size:18px;padding:12px 18px}.cover-note{color:#ccc}
-.member-shell{background:#101418;border:1px solid #38d6ff;border-radius:16px;padding:14px 18px;margin:0 0 18px}
-.member-shell p{margin:4px 0}
-body.member-open{padding-bottom:330px}
-/* Bottom chat, Neverwinter model: fixed at the bottom, above the bottom menu, never at the top. */
-.chat-dock{position:fixed;left:0;right:0;bottom:64px;z-index:25;background:#0d1418;border-top:2px solid #38d6ff;padding:10px 12px}
-.chat-tabs{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.chat-tabs button{background:#222;color:#f2ead2}
-.chat-tabs button.active{background:#38d6ff;color:#111}
-.chat-note{color:#ccc;font-size:14px}
-.chat-log{display:flex;flex-direction:column;justify-content:flex-end;overflow-y:auto;max-height:150px;min-height:60px;margin:8px 0}
-.chat-msg{margin:3px 0}
-.chat-agamoss{color:#c8f5ff}
-.chat-input-row{display:flex;gap:8px}
-.chat-input-row input{flex:1;min-width:0}
-.chat-foot{color:#ccc;font-size:13px;margin:6px 0 0}
-@media(max-width:480px){.top{flex-direction:column;text-align:center}.preview-badge{margin-left:0}.controls label{width:100%}.controls input,.controls select{width:100%}body.member-open{padding-bottom:360px}.chat-log{max-height:120px}}
-
-/* Tab-to-page: inside the member interface only one section is visible at a time. */
-body.member-open #memberView main section.card{display:none}
-body.member-open #memberView main section.card.active-page{display:block}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#0a0a0a;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+body{display:flex;flex-direction:column;min-height:100vh}
+.page{flex:1;width:100%;max-width:640px;margin:0 auto;padding:32px 20px 16px;text-align:center}
+.flag{display:block;width:100%;max-width:420px;height:auto;margin:0 auto 24px;border:1px solid #e8c15a;border-radius:8px}
+h1{font-size:32px;line-height:1.15;margin:0 0 8px;letter-spacing:.02em}
+.gold{color:#e8c15a}
+.slogan{font-size:20px;margin:0 0 28px}
+.cyan{color:#38d6ff}
+.construction{font-size:15px;letter-spacing:.18em;color:#999;margin:0 0 12px}
+.grand{font-size:28px;line-height:1.25;color:#e8c15a;margin:0 0 20px}
+.free{font-size:20px;line-height:1.45;margin:0 0 16px}
+.note{font-size:16px;line-height:1.45;color:#ccc;margin:0}
+footer{width:100%;max-width:640px;margin:0 auto;padding:16px 20px 32px;text-align:center;color:#999;font-size:13px;line-height:1.5}
+footer p{margin:4px 0}
+footer .signature{color:#999;margin:8px 0 0}
+@media(max-width:420px){.page{padding:24px 16px 12px}h1{font-size:27px}.grand{font-size:24px}.slogan,.free{font-size:18px}}
