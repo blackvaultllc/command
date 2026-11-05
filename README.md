@@ -1,9 +1,12 @@
-# The Infinity Engine — Under Construction
+# Computer Repair — Mobile, AL | Silent Security Vault
 
-UNDER CONSTRUCTION — NOT THE FULL ENGINE.
+This page holds the spot for now. It is a simple computer repair page, not the full Engine.
 
-This page is a single-page placeholder only: the real SIS flag image, THE INFINITY ENGINE title, the slogan "We turn complexity into elementary.", UNDER CONSTRUCTION, GRAND OPENING COMING SOON, and a plain message that all the cool stuff coming is for people and FREE, plus the footer credit "Built with Agamoss".
+Business: Silent Security Vault — Domenick Arlon Hall, Owner/CEO, Mobile, AL.
+Contact: Call / Text 251-394-2784, Email Blackhatterxvi@gmail.com, Website augi.space and silentsecurity.store.
+Service area: Mobile — Africatown, Tillman's Corner, Theodore, and surrounding areas.
+Services: laptops & desktops, virus & malware removal, data recovery, remote help, tune-ups.
 
-No sections, no nav pills, no preview chat, no sign-in, no paywall, no deck address, no key, and no private data are on this page.
+Contact is a Leave a Message email button (mailto to Blackhatterxvi@gmail.com) plus a call/text link. No form service, no backend, no key, no private data, no deck address.
 
-The full Infinity Engine front will replace this placeholder wholesale when it is approved and its files can move. Nothing in the full front is lost — it lives in the Engine itself, not in this placeholder.
+The full Infinity Engine front will replace this page wholesale when it is approved and its files can move. Nothing in the full front is lost — it lives in the Engine itself, not in this placeholder.
