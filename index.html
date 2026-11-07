@@ -46,6 +46,89 @@
 <h2>Where I serve</h2>
 <p class="areas">Mobile — Africatown, Tillman's Corner, Theodore, and surrounding areas.</p>
 
+<section class="translator" id="translator" aria-label="Translator">
+<h2>Translator — talk in any language</h2>
+<p class="tr-intro">Hold your phone near the other person and tap Start listening. Whatever they say gets held, translated to English, and spoken back through your earbuds or headset — so you can hold a conversation in a language you do not speak.</p>
+<p class="tr-status" id="trStatus">Translator is stopped.</p>
+<button class="btn tr-start" id="trStartBtn" type="button">Start listening</button>
+
+<div class="tr-box">
+<p class="tr-label">Heard (original, exactly as said)</p>
+<p class="tr-heard" id="trHeard">Nothing held yet.</p>
+</div>
+<div class="tr-box tr-english-box">
+<p class="tr-label">English</p>
+<p class="tr-english" id="trEnglish">—</p>
+</div>
+
+<div class="tr-row">
+<button class="tr-btn" id="trFlushBtn" type="button">They're done — translate now</button>
+<button class="tr-btn" id="trDiscardBtn" type="button">Discard held words</button>
+</div>
+
+<div class="tr-controls">
+<label class="tr-field">Wait after a pause before translating
+<input type="range" id="trPause" min="1000" max="2600" step="100" value="1800">
+<span id="trPauseVal">1.8s</span></label>
+<label class="tr-field">How fast the English is spoken
+<select id="trSpeed">
+<option value="0.7">Slow — 0.7×</option>
+<option value="0.85" selected>Calm — 0.85×</option>
+<option value="1">Normal — 1×</option>
+</select></label>
+<label class="tr-field">Language the mic listens for
+<select id="trHearing">
+<option value="auto" selected>Auto — my phone's language</option>
+<option value="en-US">English</option>
+<option value="es-ES">Spanish</option>
+<option value="fr-FR">French</option>
+<option value="de-DE">German</option>
+<option value="pt-BR">Portuguese</option>
+<option value="it-IT">Italian</option>
+<option value="ko-KR">Korean</option>
+<option value="ja-JP">Japanese</option>
+<option value="zh-CN">Mandarin</option>
+<option value="hi-IN">Hindi</option>
+<option value="ar-SA">Arabic</option>
+<option value="ru-RU">Russian</option>
+</select></label>
+<label class="tr-check"><input type="checkbox" id="trFocus"> Focus mode — ignore faint background voices</label>
+</div>
+
+<div class="tr-row">
+<button class="tr-btn" id="trArmBtn" type="button">Arm headset button</button>
+<button class="tr-btn" id="trReplayBtn" type="button">Replay last English</button>
+</div>
+<p class="tr-note" id="trHeadsetNote">Headset button: tap Arm headset button, then one click on your headset starts or stops listening, and two quick clicks replay the last English. Long-press stays owned by Android — only the setup below quiets it.</p>
+
+<details class="tr-setup">
+<summary>Android setup — stop Google and Bixby stealing the headset button</summary>
+<ol>
+<li>Open Settings, then Apps, then Default apps, then Digital assistant app, and set it to None.</li>
+<li>In the Google app, turn off Hey Google detection.</li>
+<li>Turn off Bixby Voice wake-up.</li>
+<li>In Chrome, allow the microphone for this site.</li>
+<li>Come back here, tap Arm headset button, then press your headset button once to test it.</li>
+</ol>
+<p>After that setup, one click reaches this page. Long-press is still Android's — it opens whatever Android has set, and this page cannot change that.</p>
+</details>
+
+<h3>How it works, plainly</h3>
+<ul class="tr-list">
+<li>The mic listens in the language you pick above. The translation then auto-detects what was actually said — English words mixed into Spanish or Korean stay in, nothing is stripped out.</li>
+<li>Words are held until the other person pauses, then translated. If the pause is too short or too long, move the wait slider.</li>
+<li>The mic goes quiet while the English is playing, so it cannot hear itself or grab background voices.</li>
+<li>Translation runs through Google Translate with a MyMemory backup. No account, no key. If a translation fetch fails, the page says UNAVAILABLE — it never fakes a translation.</li>
+<li>It needs your phone mic and a headset, and it is meant to be used in Chrome on Android with the phone near the other person.</li>
+<li>The log below lives on this page only. Leave the page and it is gone — nothing is sent or stored anywhere.</li>
+</ul>
+
+<h3>Conversation log</h3>
+<div class="tr-log" id="trLog">
+<p class="tr-log-empty">Nothing yet. Start listening and the conversation shows up here.</p>
+</div>
+</section>
+
 <section class="contact" aria-label="Contact">
 <h2>Contact now</h2>
 <a class="btn call" href="tel:+12513942784">Call / Text: 251-394-2784</a>
@@ -62,5 +145,6 @@
 <p>© Domenick Arlon Hall</p>
 <p class="signature">Built with Agamoss</p>
 </footer>
+<script src="translator.js"></script>
 </body>
 </html>

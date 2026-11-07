@@ -25,4 +25,43 @@ h2{font-size:20px;line-height:1.3;color:#e8c15a;margin:28px 0 12px}
 footer{width:100%;max-width:640px;margin:0 auto;padding:16px 20px 32px;text-align:center;color:#999;font-size:13px;line-height:1.5}
 footer p{margin:4px 0}
 footer .signature{color:#999;margin:8px 0 0}
-@media(max-width:420px){.page{padding:24px 16px 12px}h1{font-size:27px}.slogan{font-size:18px}.btn{font-size:17px}}
+@media(max-width:420px){.page{padding:24px 16px 12px}h1{font-size:27px}.slogan{font-size:18px}.btn{font-size:17px}.tr-english{font-size:22px}.tr-row{flex-direction:column}}
+
+/* Translator — public life tool. Same dark page, gold borders, big buttons. */
+.translator{margin:28px 0 0;padding:20px 16px;border:1px solid #e8c15a;border-radius:10px;background:#111;text-align:left}
+.translator h2{margin-top:0;text-align:center}
+.translator h3{font-size:18px;color:#e8c15a;margin:24px 0 10px}
+.tr-intro{font-size:17px;line-height:1.5;color:#ddd;margin:0 0 14px;text-align:center}
+.tr-status{font-size:16px;line-height:1.5;color:#38d6ff;margin:0 0 12px;text-align:center;min-height:24px}
+.tr-start{background:#e8c15a;color:#111}
+.tr-start.listening{background:#38d6ff;color:#111}
+.tr-box{margin:0 0 12px;padding:14px;border:1px solid #333;border-radius:8px;background:#0a0a0a}
+.tr-label{font-size:14px;color:#999;margin:0 0 6px}
+.tr-heard{font-size:17px;line-height:1.5;color:#ddd;margin:0}
+.tr-english-box{border-color:#e8c15a}
+.tr-english{font-size:26px;line-height:1.4;color:#fff;margin:0}
+.tr-row{display:flex;gap:10px;margin:0 0 12px}
+.tr-btn{flex:1;padding:12px 10px;border:1px solid #e8c15a;border-radius:8px;background:#111;color:#fff;font-size:16px;font-weight:700;cursor:pointer}
+.tr-btn:disabled{opacity:.45;cursor:default}
+.tr-controls{margin:0 0 12px;padding:14px;border:1px solid #333;border-radius:8px;background:#0a0a0a}
+.tr-field{display:block;font-size:16px;line-height:1.5;color:#ddd;margin:0 0 12px}
+.tr-field:last-child{margin-bottom:0}
+.tr-field input[type=range]{display:block;width:100%;margin:8px 0 0;accent-color:#e8c15a}
+.tr-field select{display:block;width:100%;margin:8px 0 0;padding:10px;border:1px solid #333;border-radius:8px;background:#111;color:#fff;font-size:16px}
+.tr-check{display:block;font-size:16px;line-height:1.5;color:#ddd;margin:0}
+.tr-check input{accent-color:#e8c15a;width:18px;height:18px;vertical-align:-3px;margin-right:6px}
+.tr-note{font-size:15px;line-height:1.5;color:#ccc;margin:0 0 12px}
+.tr-setup{margin:0 0 12px;padding:14px;border:1px solid #333;border-radius:8px;background:#0a0a0a}
+.tr-setup summary{font-size:16px;font-weight:700;color:#e8c15a;cursor:pointer}
+.tr-setup ol{font-size:16px;line-height:1.55;color:#ddd;margin:12px 0 0;padding-left:22px}
+.tr-setup li{margin:0 0 8px}
+.tr-setup p{font-size:15px;line-height:1.5;color:#ccc;margin:12px 0 0}
+.tr-list{list-style:disc;font-size:16px;line-height:1.55;color:#ddd;margin:0;padding-left:22px}
+.tr-list li{margin:0 0 8px}
+.tr-log{max-height:320px;overflow-y:auto;padding:14px;border:1px solid #333;border-radius:8px;background:#0a0a0a}
+.tr-log-empty{font-size:16px;color:#999;margin:0}
+.tr-log-entry{padding:10px 0;border-bottom:1px solid #222}
+.tr-log-entry:last-child{border-bottom:0}
+.tr-log-time{font-size:13px;color:#999;margin:0 0 4px}
+.tr-log-orig{font-size:16px;line-height:1.5;color:#ddd;margin:0 0 4px}
+.tr-log-eng{font-size:17px;line-height:1.5;color:#fff;margin:0}
